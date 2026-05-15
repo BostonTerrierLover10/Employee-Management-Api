@@ -1,0 +1,129 @@
+@EMSapi_HostAddress = https://localhost:7202
+
+GET {{EMSapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{EMSapi_HostAddress}}/api/ems
+Content-Type: application/json
+
+{
+  "name": "Justin Watson",
+  "position": "Backend Developer",
+  "department": "IT",
+  "salary": 85000
+}
+
+
+###
+
+POST {{EMSapi_HostAddress}}/api/ems
+Content-Type: application/json
+
+{
+  "name": "Justin Watson",
+  "email": "justin@example.com",
+  "phoneNumber": "123-456-7890",
+  "jobTitle": "Backend Developer",
+  "department": "IT",
+  "salary": 85000.00,
+  "hireDate": "2026-05-14T00:00:00",
+  "employmentStatus": "Active"
+}
+
+###
+
+@id=0
+DELETE {{EMSapi_HostAddress}}/api/ems?id={{id}}
+
+###
+
+POST {{EMSapi_HostAddress}}/api/ems
+Content-Type: application/json
+
+{
+  "name": "Sarah Mitchell",
+  "email": "sarah.mitchell@example.com",
+  "phoneNumber": "404-555-1122",
+  "jobTitle": "Software Engineer",
+  "department": "Engineering",
+  "salary": 95000.00,
+  "hireDate": "2025-08-12T00:00:00",
+  "employmentStatus": "Active"
+}
+
+###
+
+POST {{EMSapi_HostAddress}}/api/ems
+Content-Type: application/json
+
+{
+   "name": "David Carter",
+  "email": "david.carter@example.com",
+  "phoneNumber": "770-555-3344",
+  "jobTitle": "Project Manager",
+  "department": "Management",
+  "salary": 105000.00,
+  "hireDate": "2024-03-18T00:00:00",
+  "employmentStatus": "Active"
+}
+
+###
+
+POST {{EMSapi_HostAddress}}/api/ems
+Content-Type: application/json
+
+{
+  "name": "Emily Rodriguez",
+  "email": "emily.rodriguez@example.com",
+  "phoneNumber": "678-555-7788",
+  "jobTitle": "Database Administrator",
+  "department": "IT",
+  "salary": 98000.00,
+  "hireDate": "2023-11-06T00:00:00",
+  "employmentStatus": "On Leave"
+}
+
+###
+
+PUT {{EMSapi_HostAddress}}/api/ems/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Michael Thompson",
+  "email": "michael.thompson@example.com",
+  "phoneNumber": "404-555-9911",
+  "jobTitle": "Senior Software Engineer",
+  "department": "Engineering",
+  "salary": 120000.00,
+  "hireDate": "2024-02-15T00:00:00",
+  "employmentStatus": "Active"
+}
+
+###
+
+DELETE {{EMSapi_HostAddress}}/api/ems/3
+{
+  "id" : 3
+}
+###
+
+GET {{EMSapi_HostAddress}}/api/ems
+
+###
+
+GET {{EMSapi_HostAddress}}/api/ems/1
+{
+  "id" : 1
+}
+
+###
+
+GET {{EMSapi_HostAddress}}/api/ems/1
+{
+  "id" : 1
+}
+
+###
