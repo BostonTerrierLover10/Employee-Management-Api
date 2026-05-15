@@ -22,7 +22,7 @@ A RESTful API built with ASP.NET Core, Entity Framework Core, and SQL Server for
 ```http
 GET /api/ems
 
-### Get Employee By Id
+Get Employee By ID
 GET /api/ems/{id}
 
 ### Create Employee
